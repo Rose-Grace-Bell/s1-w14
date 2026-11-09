@@ -57,8 +57,12 @@ public class Monty {
     // This is called by Monty after the contestant makes his/her first guess.
     // It returns the position of a door behind which is a goat.
     private int goatDoorToShow (int doorWithCar, int chosenDoor) {
-      return -1;
-		//write this ....
+      int b;
+      while(true){   
+         b = randoms.nextInt (3) + 1;
+         if(!(b==doorWithCar || b==chosenDoor))
+           return b;
+      }
     }
     
     // The contestant decides on a second guess, aided (?) by knowing that the given
