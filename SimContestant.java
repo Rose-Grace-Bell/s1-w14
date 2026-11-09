@@ -12,7 +12,7 @@ public class SimContestant {
     
     // The contestant makes his/her first guess.
     public int guess1 ( ) {
-        myInitialGuess = -1;//do this ...;
+        myInitialGuess = randoms.nextInt() + 1;;//do this ...;
         return myInitialGuess;
     }
     
